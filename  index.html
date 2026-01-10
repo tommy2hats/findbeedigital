@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findbeedigital | Local SEO Agency Essex & London | Get Found Online</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Leading Local SEO agency in Essex and London. We help businesses rank higher on Google, increase local visibility, and attract more customers through proven SEO strategies.">
+    <meta name="keywords" content="local SEO Essex, SEO London, local search optimization, Google Business Profile optimization, Essex SEO agency, London SEO services, local SEO consultant, small business SEO, SEO near me, local citations, review management, Google Maps ranking">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Findbeedigital - Local SEO Agency Essex & London">
+    <meta property="og:description" content="Expert Local SEO services for Essex and London businesses. Get found by customers searching for your services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.findbeedigital.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.findbeedigital.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Findbeedigital",
+      "description": "Local SEO Agency specializing in helping Essex and London businesses improve their online visibility and attract more local customers",
+      "url": "https://www.findbeedigital.com",
+      "email": "info@findbeedigital.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Essex",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Essex"
+        },
+        {
+          "@type": "City", 
+          "name": "London"
+        }
+      ],
+      "priceRange": "$$",
+      "serviceType": [
+        "Local SEO",
+        "Search Engine Optimization",
+        "Google Business Profile Optimization",
+        "Local Citations",
+        "Review Management"
+      ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .logo-bar {
+            width: 2.5rem;
+            height: 0.25rem;
+            background-color: #EAB308;
+        }
+        
+        .logo-bar:nth-child(2) {
+            width: 3.5rem;
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Audit Form Modal -->
+    <div id="auditModal" class="modal">
+        <div class="bg-gray-900 rounded-2xl max-w-md w-full p-8 relative border border-yellow-500/30">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">&times;</button>
+            <h3 class="text-2xl font-bold mb-2">Get Your Free Local SEO Audit</h3>
+            <p class="text-gray-400 mb-6">Discover how your business ranks in Essex and London local search results</p>
+            <form onsubmit="handleSubmit(event)" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-2">Name *</label>
+                    <input type="text" id="name" name="name" required class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 text-white" placeholder="Your name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 text-white" placeholder="your@email.com">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium mb-2">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 text-white" placeholder="Your phone number">
+                </div>
+                <div>
+                    <label for="website" class="block text-sm font-medium mb-2">Website URL</label>
+                    <input type="url" id="website" name="website" class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 text-white" placeholder="https://yourwebsite.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="3" class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 text-white" placeholder="Tell us about your business..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-black py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                    Request Free Local SEO Audit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex flex-col space-y-1.5">
+                        <div class="logo-bar"></div>
+                        <div class="logo-bar"></div>
+                        <div class="logo-bar"></div>
+                    </div>
+                    <span class="text-xl font-bold">Findbeedigital</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="desktop-menu hidden md:flex items-center space-x-8">
+                    <a href="#services" class="hover:text-yellow-500 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-yellow-500 transition-colors">About</a>
+                    <a href="#contact" class="hover:text-yellow-500 transition-colors">Contact</a>
+                    <button onclick="openModal()" class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="mobile-menu md:hidden py-4 space-y-4 border-t border-gray-800">
+                <a href="#services" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition-colors">Services</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition-colors">About</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition-colors">Contact</a>
+                <button onclick="openModal(); toggleMobileMenu();" class="w-full bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-yellow-500/10 text-yellow-500 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        #1 Local SEO Agency Essex & London
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Get Found By Local Customers in <span class="text-yellow-500">Essex & London</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-8">
+                        Specialist local SEO services helping Essex and London businesses dominate Google search results, Google Maps rankings, and attract more customers through proven search engine optimization strategies.
+                    </p>
+                    <button onclick="openModal()" class="bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors inline-flex items-center">
+                        Free Local SEO Audit
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-yellow-500/20 blur-3xl rounded-full"></div>
+                    <div class="relative bg-gradient-to-br from-yellow-500/20 to-transparent p-8 rounded-2xl border border-yellow-500/30">
+                        <div class="space-y-4">
+                            <div class="bg-black/50 p-4 rounded-lg border border-yellow-500/20">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="font-semibold">Local Search Ranking</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-yellow-500 w-4/5 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="bg-black/50 p-4 rounded-lg border border-yellow-500/20">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                    <span class="font-semibold">Website Traffic Growth</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-yellow-500 w-full rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="bg-black/50 p-4 rounded-lg border border-yellow-500/20">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                    </svg>
+                                    <span class="font-semibold">Customer Engagement</span>
+                                </div>
+                                <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-yellow-500 w-11/12 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Local SEO Services for <span class="text-yellow-500">Essex & London Businesses</span></h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Comprehensive local search engine optimization solutions designed to get your business found by customers searching for your services in Essex, London, and surrounding areas.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <article class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all hover:scale-105">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Local SEO Essex & London</h3>
+                    <p class="text-gray-400">Dominate local search results in Essex and London with our proven local SEO strategies and Google ranking techniques.</p>
+                </article>
+                <article class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all hover:scale-105">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Google Business Profile Management</h3>
+                    <p class="text-gray-400">Optimize your Google Business Profile to rank higher in Google Maps and local pack results for maximum visibility.</p>
+                </article>
+                <article class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all hover:scale-105">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Local Citations & Directory Listings</h3>
+                    <p class="text-gray-400">Build authoritative local citations and business listings across UK directories to boost your local search rankings.</p>
+                </article>
+                <article class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all hover:scale-105">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3">Review Management & Reputation</h3>
+                    <p class="text-gray-400">Generate positive customer reviews and manage your online reputation to build trust and improve local rankings.</p>
+                </article>
+            </div>
+            
+            <!-- Additional SEO Content -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-yellow-500/5 to-transparent p-8 rounded-xl border border-yellow-500/20">
+                    <h3 class="text-2xl font-bold mb-4">Why Local SEO Matters for Essex & London Businesses</h3>
+                    <p class="text-gray-400 mb-4">
+                        Local SEO is essential for businesses serving customers in Essex and London. When potential customers search for services "near me" or in specific locations like Chelmsford, Colchester, Southend, Harlow, or areas across London, you need to appear at the top of search results.
+                    </p>
+                    <p class="text-gray-400">
+                        Our local SEO experts specialize in helping small businesses, restaurants, retailers, and service providers improve their Google rankings, increase website traffic, and convert more local searches into paying customers. We focus on Google Business Profile optimization, local citations, review management, and on-page SEO to ensure your business gets found by customers in your area.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-yellow-500/5">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Why Choose <span class="text-yellow-500">Findbeedigital</span> for Local SEO?</h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    We're not just another SEO agency. We're your dedicated local growth partners, specializing in helping Essex and London businesses thrive in competitive local search markets.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 text-lg">Local Market Expertise</h3>
+                            <p class="text-gray-400">Deep understanding of Essex and London search behavior, local competition, and what customers in your area are searching for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 text-lg">Proven SEO Results</h3>
+                            <p class="text-gray-400">Data-driven local SEO strategies that deliver measurable improvements in rankings, organic traffic, and customer inquiries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-500/10 to-transparent p-6 rounded-xl border border-yellow-500/20">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+                            <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 text-lg">Transparent SEO Reporting</h3>
+                            <p class="text-gray-400">Clear, honest insights into your local search performance with regular updates, keyword rankings, and actionable recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-gradient-to-br from-yellow-500/20 to-transparent p-12 rounded-2xl border border-yellow-500/30">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Dominate Local Search in Essex & London?</h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Let's discuss how our local SEO services can help your business rank higher on Google, attract more local customers, and grow your revenue.
+                </p>
+                <button onclick="openModal()" class="bg-yellow-500 text-black px-10 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors text-lg">
+                    Get Your Free Local SEO Audit
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-yellow-500/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Contact Our Local SEO <span class="text-yellow-500">Experts</span></h2>
+                <p class="text-xl text-gray-400">Get in touch to discuss your local SEO needs in Essex and London.</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="text-center p-8 bg-gradient-to-br from-yellow-500/10 to-transparent rounded-xl border border-yellow-500/20">
+                    <div class="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-xl">Email Our SEO Team</h3>
+                    <a href="mailto:info@findbeedigital.com" class="text-gray-400 text-lg hover:text-yellow-500 transition-colors">info@findbeedigital.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="flex flex-col space-y-1.5">
+                            <div class="logo-bar"></div>
+                            <div class="logo-bar"></div>
+                            <div class="logo-bar"></div>
+                        </div>
+                        <span class="text-xl font-bold">Findbeedigital</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted local SEO partner in Essex and London. Helping businesses get found by customers through expert search engine optimization, Google Business Profile management, and local search marketing.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <strong>Service Areas:</strong> Essex, London, Chelmsford, Colchester, Southend-on-Sea, Basildon, Harlow, Brentwood, Romford, and surrounding areas.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#services" class="block text-gray-400 hover:text-yellow-500 transition-colors">Local SEO Services</a>
+                        <a href="#about" class="block text-gray-400 hover:text-yellow-500 transition-colors">About Us</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-yellow-500 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">SEO Services</h4>
+                    <div class="space-y-2">
+                        <p class="text-gray-400">Local SEO Essex</p>
+                        <p class="text-gray-400">Local SEO London</p>
+                        <p class="text-gray-400">Google Business Profile</p>
+                        <p class="text-gray-400">Local Citations</p>
+                        <p class="text-gray-400">Review Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-900 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Findbeedigital - Local SEO Agency Essex & London. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('auditModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('auditModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('auditModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone') || 'Not provided';
+            const website = formData.get('website') || 'Not provided';
+            const message = formData.get('message') || 'No message provided';
+            
+            const emailBody = `Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Website: ${website}
+
+Message:
+${message}`;
+            
+            const mailtoLink = `mailto:info@findbeedigital.com?subject=Free SEO Audit Request from ${encodeURIComponent(name)}&body=${encodeURIComponent(emailBody)}`;
+            
+            window.location.href = mailtoLink;
+            
+            setTimeout(() => {
+                alert('Your email client will open with the form details. Please send the email to complete your request.');
+                closeModal();
+                event.target.reset();
+            }, 500);
+        }
+    </script>
+</body>
+</html>
